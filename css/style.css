@@ -133,6 +133,7 @@ header.site-header {
   color: var(--gray-500);
   text-transform: uppercase;
 }
+.logo img { height: 56px; width: auto; display: block; }
 .main-nav {
   display: flex;
   align-items: center;
@@ -615,8 +616,8 @@ footer.site-footer {
 .footer-grid h4 { color: var(--white); font-size: 0.95rem; margin-bottom: 18px; }
 .footer-grid ul { display: flex; flex-direction: column; gap: 10px; }
 .footer-grid a:hover { color: var(--white); }
-.footer-logo { font-size: 1.3rem; font-weight: 900; color: var(--white); margin-bottom: 12px; }
-.footer-logo span { color: var(--red); }
+.footer-logo { display: inline-block; background: var(--white); border-radius: 10px; padding: 10px 16px; margin-bottom: 16px; }
+.footer-logo img { height: 42px; width: auto; display: block; }
 .footer-about p { font-size: 0.88rem; color: var(--gray-500); margin-bottom: 18px; }
 .social-row { display: flex; gap: 12px; }
 .social-row a {
