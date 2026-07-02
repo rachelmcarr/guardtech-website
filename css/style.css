@@ -537,12 +537,14 @@ header.site-header {
   box-shadow: var(--shadow-sm);
 }
 .pest-card .thumb {
-  height: 110px;
+  height: 130px;
   background: var(--gray-50);
   display: flex; align-items: center; justify-content: center;
   color: var(--gray-500);
   font-size: 1.8rem;
+  overflow: hidden;
 }
+.pest-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
 .pest-card .content { padding: 16px; }
 .pest-card h4 { font-size: 0.95rem; margin-bottom: 4px; }
 .pest-card p { font-size: 0.82rem; color: var(--gray-500); }
