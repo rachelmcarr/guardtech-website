@@ -148,7 +148,7 @@ header.site-header {
   border-bottom: 2px solid transparent;
 }
 .main-nav ul a:hover, .main-nav ul a.active { color: var(--red); border-color: var(--red); }
-.nav-cta { display: flex; align-items: center; gap: 12px; }
+.nav-cta { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .portal-link {
   font-weight: 700;
   font-size: 0.9rem;
@@ -156,8 +156,10 @@ header.site-header {
   border: 2px solid var(--gray-300);
   padding: 12px 22px;
   border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.nav-cta .btn { padding: 12px 22px; }
+.nav-cta .btn { padding: 12px 22px; white-space: nowrap; flex-shrink: 0; }
 .portal-link:hover { border-color: var(--black); }
 
 .menu-toggle {
