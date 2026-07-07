@@ -116,7 +116,7 @@ header.site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 96px;
 }
 .logo {
   font-size: 1.4rem;
@@ -133,7 +133,7 @@ header.site-header {
   color: var(--gray-500);
   text-transform: uppercase;
 }
-.logo img { height: 56px; width: auto; display: block; }
+.logo img { height: 78px; width: auto; display: block; }
 .main-nav {
   display: flex;
   align-items: center;
@@ -711,7 +711,7 @@ footer.site-footer {
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 720px) {
-  .main-nav { position: fixed; top: 80px; left: 0; right: 0; bottom: 0; background: var(--white); flex-direction: column; align-items: flex-start; padding: 30px 24px; gap: 24px; transform: translateX(100%); transition: transform 0.25s ease; overflow-y: auto; }
+  .main-nav { position: fixed; top: 96px; left: 0; right: 0; bottom: 0; background: var(--white); flex-direction: column; align-items: flex-start; padding: 30px 24px; gap: 24px; transform: translateX(100%); transition: transform 0.25s ease; overflow-y: auto; }
   .main-nav.open { transform: translateX(0); }
   .main-nav ul { flex-direction: column; gap: 18px; width: 100%; }
   .main-nav a { font-size: 1.1rem; }
