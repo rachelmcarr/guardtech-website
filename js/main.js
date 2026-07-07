@@ -1,4 +1,4 @@
-// GuardTech Pest Control — reference site interactions
+// GuardTech Pest Management — reference site interactions
 
 document.addEventListener('DOMContentLoaded', function () {
   // Mobile nav toggle
