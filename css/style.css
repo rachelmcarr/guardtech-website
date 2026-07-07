@@ -499,6 +499,22 @@ header.site-header {
 .timeline-item { display: grid; grid-template-columns: 110px 1fr; gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--gray-100); }
 .timeline-item .year { font-weight: 900; color: var(--red); font-size: 1.2rem; }
 
+/* ---------- Certification / membership logo row ---------- */
+.cert-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 44px;
+  margin-top: 40px;
+}
+.cert-row img {
+  height: 58px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
 /* ---------- Real photo grid (termites page, etc.) ---------- */
 .photo-grid {
   display: grid;
