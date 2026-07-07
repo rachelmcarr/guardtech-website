@@ -140,24 +140,24 @@ header.site-header {
   gap: 30px;
 }
 .main-nav ul { display: flex; gap: 26px; }
-.main-nav a {
+.main-nav ul a {
   font-weight: 600;
   font-size: 0.92rem;
   color: var(--gray-700);
   padding: 8px 0;
   border-bottom: 2px solid transparent;
 }
-.main-nav a:hover, .main-nav a.active { color: var(--red); border-color: var(--red); }
+.main-nav ul a:hover, .main-nav ul a.active { color: var(--red); border-color: var(--red); }
 .nav-cta { display: flex; align-items: center; gap: 12px; }
 .portal-link {
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--black);
   border: 2px solid var(--gray-300);
-  padding: 14px 26px;
+  padding: 12px 22px;
   border-radius: 999px;
 }
-.nav-cta .btn { padding: 14px 26px; }
+.nav-cta .btn { padding: 12px 22px; }
 .portal-link:hover { border-color: var(--black); }
 
 .menu-toggle {
@@ -715,7 +715,7 @@ footer.site-footer {
   .main-nav { position: fixed; top: 96px; left: 0; right: 0; bottom: 0; background: var(--white); flex-direction: column; align-items: flex-start; padding: 30px 24px; gap: 24px; transform: translateX(100%); transition: transform 0.25s ease; overflow-y: auto; }
   .main-nav.open { transform: translateX(0); }
   .main-nav ul { flex-direction: column; gap: 18px; width: 100%; }
-  .main-nav a { font-size: 1.1rem; }
+  .main-nav ul a { font-size: 1.1rem; }
   .nav-cta { flex-direction: column; align-items: flex-start; width: 100%; }
   .menu-toggle { display: flex; }
   .topbar .wrap { font-size: 0.75rem; }
