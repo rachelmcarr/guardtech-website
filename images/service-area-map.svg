@@ -1,9 +1,27 @@
 <svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
-  <rect x="0" y="0" width="900" height="850" fill="#f7f7f8"/>
+  <rect x="0" y="0" width="900" height="850" fill="#f3f4f6"/>
 
-  <!-- Gulf / Sabine Lake context, bottom-right -->
-  <path d="M 620,760 C 660,780 720,800 780,820 L 900,850 L 900,780 C 850,760 760,730 700,715 Z" fill="#cfe3f2"/>
-  <text x="770" y="795" font-size="13" fill="#5b7f96" font-style="italic">Gulf Coast</text>
+  <!-- Subtle map graticule -->
+  <g stroke="#e2e4e8" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="850"/><line x1="150" y1="0" x2="150" y2="850"/>
+    <line x1="250" y1="0" x2="250" y2="850"/><line x1="350" y1="0" x2="350" y2="850"/>
+    <line x1="450" y1="0" x2="450" y2="850"/><line x1="550" y1="0" x2="550" y2="850"/>
+    <line x1="650" y1="0" x2="650" y2="850"/><line x1="750" y1="0" x2="750" y2="850"/>
+    <line x1="850" y1="0" x2="850" y2="850"/>
+    <line x1="0" y1="50" x2="900" y2="50"/><line x1="0" y1="150" x2="900" y2="150"/>
+    <line x1="0" y1="250" x2="900" y2="250"/><line x1="0" y1="350" x2="900" y2="350"/>
+    <line x1="0" y1="450" x2="900" y2="450"/><line x1="0" y1="550" x2="900" y2="550"/>
+    <line x1="0" y1="650" x2="900" y2="650"/><line x1="0" y1="750" x2="900" y2="750"/>
+  </g>
+
+  <!-- Louisiana border reference -->
+  <path d="M 845,0 C 830,120 850,240 800,340 C 815,420 790,480 800,560 C 780,620 760,680 700,715 L 900,850 L 900,0 Z"
+        fill="#e9edf1" fill-opacity="0.6"/>
+  <text x="855" y="130" font-size="13" fill="#9aa5b1" transform="rotate(90 855 130)">LOUISIANA</text>
+
+  <!-- Gulf / Sabine Lake -->
+  <path d="M 620,760 C 660,780 720,800 780,820 L 900,850 L 900,780 C 850,760 760,730 700,715 Z" fill="#bcdcef"/>
+  <text x="768" y="800" font-size="13" fill="#4a7896" font-style="italic">Gulf Coast</text>
 
   <!-- Service area shape -->
   <path d="M 330,190
@@ -21,7 +39,25 @@
            C 202,492 212,442 242,392
            C 262,342 272,292 302,242
            C 308,218 312,198 330,190 Z"
-        fill="#ef4444" fill-opacity="0.14" stroke="#ef4444" stroke-width="4" stroke-linejoin="round"/>
+        fill="#ef4444" fill-opacity="0.16" stroke="#ef4444" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Highways -->
+  <g stroke="#c6cad1" stroke-width="5" fill="none">
+    <path d="M 120,600 C 300,585 450,568 598,560 C 680,566 730,570 860,580"/>
+    <path d="M 655,200 C 660,300 668,410 697,522 C 705,555 712,580 718,608"/>
+    <path d="M 470,245 C 500,330 530,410 565,500 C 585,545 600,600 598,560"/>
+    <path d="M 300,205 C 420,195 560,195 700,205"/>
+  </g>
+  <g font-size="12" font-weight="700" fill="#57606b">
+    <circle cx="330" cy="596" r="13" fill="#ffffff" stroke="#c6cad1" stroke-width="2"/>
+    <text x="330" y="601" text-anchor="middle">10</text>
+    <circle cx="694" cy="430" r="13" fill="#ffffff" stroke="#c6cad1" stroke-width="2"/>
+    <text x="694" y="435" text-anchor="middle">96</text>
+    <circle cx="540" cy="420" r="13" fill="#ffffff" stroke="#c6cad1" stroke-width="2"/>
+    <text x="540" y="425" text-anchor="middle">69</text>
+    <circle cx="500" cy="200" r="13" fill="#ffffff" stroke="#c6cad1" stroke-width="2"/>
+    <text x="500" y="205" text-anchor="middle">190</text>
+  </g>
 
   <!-- Reference city outside coverage -->
   <circle cx="150" cy="560" r="5" fill="#a1a1aa"/>
@@ -58,6 +94,24 @@
     <text x="704" y="568">Orange</text>
     <text x="608" y="520">Mauriceville</text>
     <text x="200" y="296">Livingston</text>
+  </g>
+
+  <!-- Compass -->
+  <g transform="translate(838,60)">
+    <circle r="26" fill="#ffffff" stroke="#d4d4d8" stroke-width="1.5"/>
+    <path d="M0,-18 L7,4 L0,-2 L-7,4 Z" fill="#3f3f46"/>
+    <text x="0" y="-24" text-anchor="middle" font-size="12" font-weight="700" fill="#3f3f46">N</text>
+  </g>
+
+  <!-- Scale bar -->
+  <g transform="translate(40,796)">
+    <line x1="0" y1="0" x2="120" y2="0" stroke="#57606b" stroke-width="2"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#57606b" stroke-width="2"/>
+    <line x1="60" y1="-5" x2="60" y2="5" stroke="#57606b" stroke-width="2"/>
+    <line x1="120" y1="-5" x2="120" y2="5" stroke="#57606b" stroke-width="2"/>
+    <text x="0" y="18" font-size="11" fill="#57606b">0</text>
+    <text x="52" y="18" font-size="11" fill="#57606b">10 mi</text>
+    <text x="105" y="18" font-size="11" fill="#57606b">20 mi</text>
   </g>
 
   <!-- Legend -->
