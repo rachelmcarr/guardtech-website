@@ -215,7 +215,9 @@ header.site-header {
   font-size: 0.9rem;
   text-align: center;
   padding: 20px;
+  overflow: hidden;
 }
+.hero-visual img { width: 100%; height: 100%; min-height: 340px; object-fit: cover; border-radius: var(--radius); }
 
 /* ---------- Service Cards (icon cards, Getem-style) ---------- */
 .service-grid {
