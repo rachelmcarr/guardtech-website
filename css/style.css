@@ -149,7 +149,7 @@ header.site-header {
 }
 .main-nav a:hover, .main-nav a.active { color: var(--red); border-color: var(--red); }
 .nav-cta { display: flex; align-items: center; gap: 12px; }
-.nav-cta .btn { padding: 16px 34px; white-space: nowrap; }
+.nav-cta .btn { padding: 14px 30px; white-space: nowrap; }
 .portal-link {
   font-weight: 700;
   font-size: 0.9rem;
