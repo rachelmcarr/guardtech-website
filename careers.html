@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WDIR Reports | GuardTech Pest Management</title>
+<title>Careers | GuardTech Pest Management</title>
 <link rel="stylesheet" href="css/style.css?v=17">
 </head>
 <body>
 
-<div class="dev-note">REFERENCE BUILD &mdash; WDO page intentionally removed per direction. Only WDIR retained.</div>
+<div class="dev-note">REFERENCE BUILD &mdash; application form has no backend yet; wire up to Scorpion's lead/HR system, including real resume file handling.</div>
 
 <div class="topbar">
   <div class="wrap">
@@ -43,53 +43,45 @@
 
 <section class="hero" style="padding:60px 0;">
   <div class="wrap">
-    <span class="eyebrow">Real Estate Reports</span>
-    <h1 style="font-size:2.4rem;">WDIR Reports for Home Sales &amp; Closings</h1>
-    <p class="lead">Buying or selling a home? We provide Wood Destroying Insect Reports (WDIR) required for many real estate transactions and loan closings.</p>
-    <div class="hero-actions"><a href="contact.html" class="btn btn-primary">Request a WDIR Report</a></div>
+    <span class="eyebrow">Careers</span>
+    <h1 style="font-size:2.4rem;">Join the GuardTech Team</h1>
+    <p class="lead">We're always looking for good people to add to our team. If you're hard-working and take pride in doing a job right, we'd like to hear from you &mdash; submit your info and resume below.</p>
   </div>
 </section>
 
 <section class="section">
-  <div class="wrap">
-    <div class="center" style="max-width:700px;">
-      <span class="eyebrow">What Is a WDIR?</span>
-      <h2>Wood Destroying Insect Report</h2>
-      <p class="center">A WDIR documents evidence of termites and other wood-destroying insects found during a licensed inspection of a property. Lenders, real estate agents, and closing attorneys frequently require this report as part of the sale process.</p>
-    </div>
-    <div class="benefits-row">
-      <div class="benefit">
-        <div class="num">1</div>
-        <h4>Licensed Inspection</h4>
-        <p>A certified inspector examines accessible areas of the home.</p>
+  <div class="wrap contact-grid">
+    <form class="contact-form">
+      <div class="form-row">
+        <div><label for="fname">First Name</label><input type="text" id="fname" required></div>
+        <div><label for="lname">Last Name</label><input type="text" id="lname" required></div>
       </div>
-      <div class="benefit">
-        <div class="num">2</div>
-        <h4>Fast Turnaround</h4>
-        <p>Reports typically completed within days to meet closing timelines.</p>
+      <div class="form-row">
+        <div><label for="phone">Phone</label><input type="tel" id="phone" required></div>
+        <div><label for="email">Email</label><input type="email" id="email" required></div>
       </div>
-      <div class="benefit">
-        <div class="num">3</div>
-        <h4>Clear Documentation</h4>
-        <p>Standardized report accepted by lenders, agents, and title companies.</p>
-      </div>
-      <div class="benefit">
-        <div class="num">4</div>
-        <h4>Follow-Up Treatment</h4>
-        <p>If issues are found, we can provide treatment options and next steps.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="cta-banner">
       <div>
-        <h2>Need a WDIR for an upcoming closing?</h2>
-        <p>Let us know your timeline and we'll get you scheduled.</p>
+        <label for="position">Position Interested In</label>
+        <select id="position">
+          <option>Pest Control Technician</option>
+          <option>Office / Administrative</option>
+          <option>Sales</option>
+          <option>Other</option>
+        </select>
       </div>
-      <a href="contact.html" class="btn btn-dark">Request a Report</a>
+      <div><label for="resume">Resume</label><input type="file" id="resume" accept=".pdf,.doc,.docx"></div>
+      <div><label for="message">Tell Us About Yourself</label><textarea id="message" placeholder="Work experience, availability, anything else you'd like us to know..."></textarea></div>
+      <p class="consent-text">By submitting this form, you consent to GuardTech Pest Management contacting you about employment opportunities.</p>
+      <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+    </form>
+
+    <div class="contact-info-card">
+      <h3>Why Work With Us</h3>
+      <ul>
+        <li>🤝 <div><strong>Family Operated</strong><br>You're joining a local team, not a faceless franchise.</div></li>
+        <li>📅 <div><strong>Steady Work</strong><br>Year-round demand for pest control services.</div></li>
+        <li>📈 <div><strong>Room to Grow</strong><br>We promote from within as the company grows.</div></li>
+      </ul>
     </div>
   </div>
 </section>
