@@ -1,6 +1,16 @@
 // GuardTech Pest Management — reference site interactions
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Transparent-to-solid header on scroll (homepage only, see body.home CSS)
+  var header = document.querySelector('.site-header');
+  if (header) {
+    var updateHeaderState = function () {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    };
+    updateHeaderState();
+    window.addEventListener('scroll', updateHeaderState, { passive: true });
+  }
+
   // Mobile nav toggle
   var toggle = document.querySelector('.menu-toggle');
   var nav = document.querySelector('.main-nav');
