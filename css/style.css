@@ -115,9 +115,16 @@ header.site-header {
 
 /* Homepage: transparent nav floating over the hero photo, becoming a
    translucent "frosted" bar once the page scrolls past it. */
-body.home header.site-header {
+body.home .topbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+}
+body.home header.site-header {
+  position: fixed;
+  top: 38px;
   left: 0;
   right: 0;
   background: transparent;
