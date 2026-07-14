@@ -6,8 +6,8 @@
 :root {
   --black: #141416;
   --near-black: #1c1c1f;
-  --red: #ef4444;
-  --red-dark: #dc2626;
+  --red: #c62828;
+  --red-dark: #9e1f1f;
   --white: #ffffff;
   --gray-50: #f7f7f8;
   --gray-100: #eeeeef;
@@ -25,7 +25,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   color: var(--gray-700);
   line-height: 1.6;
   background: var(--white);
@@ -247,7 +247,7 @@ header.site-header {
 .service-card .icon {
   width: 54px; height: 54px;
   border-radius: 12px;
-  background: rgba(239,68,68,0.1);
+  background: rgba(198,40,40,0.1);
   display: flex; align-items: center; justify-content: center;
   color: var(--red);
 }
@@ -318,7 +318,7 @@ header.site-header {
   flex-shrink: 0;
   width: 26px; height: 26px;
   border-radius: 50%;
-  background: rgba(239,68,68,0.12);
+  background: rgba(198,40,40,0.12);
   color: var(--red);
   display: flex; align-items: center; justify-content: center;
   font-weight: 900;
@@ -389,7 +389,7 @@ header.site-header {
 .why-card .icon {
   width: 60px; height: 60px;
   border-radius: 50%;
-  background: rgba(239,68,68,0.1);
+  background: rgba(198,40,40,0.1);
   color: var(--red);
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 16px;
@@ -563,7 +563,7 @@ header.site-header {
 .coming-soon .icon-big {
   width: 90px; height: 90px;
   border-radius: 50%;
-  background: rgba(239,68,68,0.1);
+  background: rgba(198,40,40,0.1);
   color: var(--red);
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 26px;
