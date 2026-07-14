@@ -730,6 +730,7 @@ footer.site-footer {
   display: flex; align-items: center; justify-content: center;
 }
 .social-row a:hover { background: var(--red); }
+.social-row svg { width: 17px; height: 17px; }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
