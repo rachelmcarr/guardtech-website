@@ -3,9 +3,15 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Transparent-to-solid header on scroll (homepage only, see body.home CSS)
   var header = document.querySelector('.site-header');
+  var logo = document.getElementById('site-logo');
   if (header) {
     var updateHeaderState = function () {
-      header.classList.toggle('scrolled', window.scrollY > 40);
+      var scrolled = window.scrollY > 40;
+      header.classList.toggle('scrolled', scrolled);
+      if (logo) {
+        var wanted = scrolled ? logo.dataset.dark : logo.dataset.light;
+        if (logo.getAttribute('src') !== wanted) logo.setAttribute('src', wanted);
+      }
     };
     updateHeaderState();
     window.addEventListener('scroll', updateHeaderState, { passive: true });
