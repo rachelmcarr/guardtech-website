@@ -111,44 +111,36 @@ p { max-width: 65ch; }
 .icon-inline { width: 14px; height: 14px; flex-shrink: 0; }
 
 /* ---------- Header / Nav ---------- */
+/* Transparent nav floating over the hero (which is always a dark
+   background), becoming a translucent "frosted" bar once the page
+   scrolls past it. Every page's hero provides its own top clearance,
+   so body itself needs no compensating padding. */
 header.site-header {
   position: fixed;
   top: 38px;
   left: 0;
   right: 0;
   z-index: 100;
-  background: var(--white);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-}
-
-/* Both bars are fixed/pinned on every page. Body padding below
-   compensates for the space they no longer take up in normal flow. */
-body { padding-top: 150px; }
-body.home { padding-top: 0; }
-
-/* Homepage: transparent nav floating over the hero photo, becoming a
-   translucent "frosted" bar once the page scrolls past it. */
-body.home header.site-header {
   background: transparent;
   box-shadow: none;
   transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
 }
-body.home header.site-header .main-nav ul a,
-body.home header.site-header .logo small { color: rgba(255,255,255,0.9); }
-body.home header.site-header .main-nav ul a:hover,
-body.home header.site-header .main-nav ul a.active { color: var(--white); border-color: var(--white); }
-body.home header.site-header .menu-toggle span { background: var(--white); }
-body.home header.site-header.scrolled {
+header.site-header .main-nav ul a,
+header.site-header .logo small { color: rgba(255,255,255,0.9); }
+header.site-header .main-nav ul a:hover,
+header.site-header .main-nav ul a.active { color: var(--white); border-color: var(--white); }
+header.site-header .menu-toggle span { background: var(--white); }
+header.site-header.scrolled {
   background: rgba(255,255,255,0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
-body.home header.site-header.scrolled .main-nav ul a { color: var(--gray-700); }
-body.home header.site-header.scrolled .main-nav ul a:hover,
-body.home header.site-header.scrolled .main-nav ul a.active { color: var(--red); border-color: var(--red); }
-body.home header.site-header.scrolled .logo small { color: var(--gray-500); }
-body.home header.site-header.scrolled .menu-toggle span { background: var(--black); }
+header.site-header.scrolled .main-nav ul a { color: var(--gray-700); }
+header.site-header.scrolled .main-nav ul a:hover,
+header.site-header.scrolled .main-nav ul a.active { color: var(--red); border-color: var(--red); }
+header.site-header.scrolled .logo small { color: var(--gray-500); }
+header.site-header.scrolled .menu-toggle span { background: var(--black); }
 .nav-row {
   display: flex;
   align-items: center;

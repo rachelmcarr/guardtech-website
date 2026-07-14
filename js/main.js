@@ -1,7 +1,7 @@
 // GuardTech Pest Management — reference site interactions
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Transparent-to-solid header on scroll (homepage only, see body.home CSS)
+  // Transparent-to-solid header on scroll (all pages)
   var header = document.querySelector('.site-header');
   var logo = document.getElementById('site-logo');
   if (header) {
