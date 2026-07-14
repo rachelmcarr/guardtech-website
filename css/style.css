@@ -720,7 +720,7 @@ footer.site-footer {
 .footer-grid ul { display: flex; flex-direction: column; gap: 10px; }
 .footer-grid a:hover { color: var(--white); }
 .footer-logo { display: inline-block; margin-bottom: 16px; }
-.footer-logo img { height: 68px; width: auto; display: block; }
+.footer-logo img { height: 120px; width: auto; display: block; }
 .footer-about p { font-size: 0.88rem; color: var(--gray-500); margin-bottom: 18px; }
 .social-row { display: flex; gap: 12px; }
 .social-row a {
