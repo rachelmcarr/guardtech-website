@@ -109,6 +109,7 @@ p { max-width: 65ch; }
 .topbar a:hover { color: var(--white); }
 .topbar-left, .topbar-right { display: flex; align-items: center; gap: 20px; }
 .icon-inline { width: 14px; height: 14px; flex-shrink: 0; }
+.icon-inline-lg { width: 22px; height: 22px; flex-shrink: 0; color: var(--red); margin-top: 2px; }
 
 /* ---------- Header / Nav ---------- */
 /* Transparent nav floating over the hero (which is always a dark
