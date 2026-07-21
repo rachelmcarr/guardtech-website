@@ -701,7 +701,7 @@ textarea { resize: vertical; min-height: 100px; }
 .contact-info-card li { display: flex; gap: 14px; align-items: flex-start; }
 .consent-text { font-size: 0.78rem; color: var(--gray-500); }
 
-.additional-services { padding: 40px 0; border-top: 1px solid var(--gray-100); }
+.additional-services { padding: 50px 0; border-top: 1px solid var(--gray-100); }
 .additional-services .label {
   display: block;
   text-align: center;
@@ -710,11 +710,10 @@ textarea { resize: vertical; min-height: 100px; }
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--gray-500);
-  margin-bottom: 16px;
+  margin-bottom: 0;
 }
-.additional-services .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 30px; }
-.additional-services .links a { font-size: 0.9rem; font-weight: 600; color: var(--gray-700); }
-.additional-services .links a:hover { color: var(--red); }
+.additional-services .service-grid { margin-top: 20px; }
+.additional-services .service-card h3 { font-size: 1rem; }
 
 .photo-placeholder {
   width: 100%;
@@ -732,6 +731,7 @@ textarea { resize: vertical; min-height: 100px; }
 }
 .photo-card .photo-placeholder { border: none; border-radius: 0; }
 .split-photo .photo-placeholder { height: 100%; min-height: 320px; border: none; border-radius: 0; }
+.card-photo .photo-placeholder { height: 100%; border: none; border-radius: 0; font-size: 0.75rem; }
 
 /* ---------- Footer ---------- */
 footer.site-footer {
