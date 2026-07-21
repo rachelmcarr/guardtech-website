@@ -701,6 +701,22 @@ textarea { resize: vertical; min-height: 100px; }
 .contact-info-card li { display: flex; gap: 14px; align-items: flex-start; }
 .consent-text { font-size: 0.78rem; color: var(--gray-500); }
 
+/* ---------- Additional services (bottom-of-page link strip) ---------- */
+.additional-services { padding: 40px 0; border-top: 1px solid var(--gray-100); }
+.additional-services .label {
+  display: block;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+  margin-bottom: 16px;
+}
+.additional-services .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 30px; }
+.additional-services .links a { font-size: 0.9rem; font-weight: 600; color: var(--gray-700); }
+.additional-services .links a:hover { color: var(--red); }
+
 /* ---------- Footer ---------- */
 footer.site-footer {
   background: var(--black);
