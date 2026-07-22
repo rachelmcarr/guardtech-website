@@ -693,6 +693,14 @@ header.site-header.scrolled .menu-toggle span { background: var(--black); }
 .pest-modal-facts { display: flex; flex-direction: column; gap: 14px; }
 .pest-modal-facts dt { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gray-500); margin-bottom: 3px; }
 .pest-modal-facts dd { margin: 0; font-size: 0.95rem; color: var(--gray-700); }
+.pest-modal-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--red);
+}
+.pest-modal-link:after { content: " \2192"; }
 
 /* ---------- Locations page ---------- */
 .locations-hero { position: relative; }

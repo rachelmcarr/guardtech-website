@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var modalAppearance = document.getElementById('pestModalAppearance');
     var modalSize = document.getElementById('pestModalSize');
     var modalHabitat = document.getElementById('pestModalHabitat');
+    var modalLink = document.getElementById('pestModalLink');
     var modalCloseBtn = pestModalOverlay.querySelector('.pest-modal-close');
 
     var openPestModal = function (card) {
@@ -82,6 +83,14 @@ document.addEventListener('DOMContentLoaded', function () {
       modalAppearance.textContent = card.getAttribute('data-appearance') || '';
       modalSize.textContent = card.getAttribute('data-size') || '';
       modalHabitat.textContent = card.getAttribute('data-habitat') || '';
+      var linkHref = card.getAttribute('data-link-href');
+      if (linkHref) {
+        modalLink.href = linkHref;
+        modalLink.textContent = card.getAttribute('data-link-text') || 'Learn more';
+        modalLink.style.display = '';
+      } else {
+        modalLink.style.display = 'none';
+      }
       pestModalOverlay.classList.add('open');
     };
 
