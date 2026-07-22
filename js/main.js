@@ -57,6 +57,54 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Pest ID modal (Pest ID page)
+  var pestModalOverlay = document.getElementById('pestModalOverlay');
+  if (pestModalOverlay) {
+    var modalPhoto = pestModalOverlay.querySelector('.pest-modal-photo');
+    var modalTag = document.getElementById('pestModalTag');
+    var modalName = document.getElementById('pestModalName');
+    var modalAppearance = document.getElementById('pestModalAppearance');
+    var modalSize = document.getElementById('pestModalSize');
+    var modalHabitat = document.getElementById('pestModalHabitat');
+    var modalCloseBtn = pestModalOverlay.querySelector('.pest-modal-close');
+
+    var openPestModal = function (card) {
+      var thumbImg = card.querySelector('.thumb img');
+      if (thumbImg) {
+        modalPhoto.innerHTML = '<img src="' + thumbImg.src + '" alt="' + thumbImg.alt + '">';
+      } else {
+        modalPhoto.innerHTML = '<div class="photo-placeholder">Photo coming soon</div>';
+      }
+      var tagEl = card.querySelector('.tag');
+      var nameEl = card.querySelector('h4');
+      modalTag.textContent = tagEl ? tagEl.textContent : '';
+      modalName.textContent = nameEl ? nameEl.textContent : '';
+      modalAppearance.textContent = card.getAttribute('data-appearance') || '';
+      modalSize.textContent = card.getAttribute('data-size') || '';
+      modalHabitat.textContent = card.getAttribute('data-habitat') || '';
+      pestModalOverlay.classList.add('open');
+    };
+
+    var closePestModal = function () {
+      pestModalOverlay.classList.remove('open');
+    };
+
+    document.querySelectorAll('.pest-card').forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        openPestModal(card);
+      });
+    });
+
+    modalCloseBtn.addEventListener('click', closePestModal);
+    pestModalOverlay.addEventListener('click', function (e) {
+      if (e.target === pestModalOverlay) closePestModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closePestModal();
+    });
+  }
+
   // Contact form (reference only — no backend wired up)
   var form = document.querySelector('.contact-form');
   if (form) {
